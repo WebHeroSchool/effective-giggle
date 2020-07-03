@@ -1,0 +1,69 @@
+.menu *:focus,.menu *::before,.menu *::after {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+  box-sizing: content-box;
+}
+.menu li {
+  display: inline-block;
+  background: #c2f272;
+  font-size: 1.4em;
+  text-align: center;
+  width: 24%;
+}
+.menu li:hover {
+  background: #f2d272;
+}
+.menu li a {
+  display: block;
+  text-decoration: none;
+  color: #000;
+  padding: 10px 0;
+  width: 100%;
+}
+
+@media screen and (max-width: 920px) {
+.menu li {
+    width: 49.5%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+.menu li {
+    width: 100%;
+}
+.menu ul {
+  display: none;
+}
+}
+.menu nav::before,
+.menu::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAMAAAA8VkqRAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAE5JREFUeAFjwAkYcQC6SFAKBt4fo/6AaMMUQTUQIYJpFaqrMIICzkATR2Hi5uDUjmkh7tDAHUq4Qw8ujl+CsFEEHDVowg1n1OJKDLiTDwBLrgJ9vkuXOwAAAABJRU5ErkJggg==);
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+}
+.menu nav::before,
+.menu::after {
+  background-color: #fc0;
+  border: 9px solid #fc0;
+}
+.menu::after {
+  background-position: -24px -24px;
+  z-index: 1;
+}
+.menu nav::before {
+  z-index: 2;
+}
+.menu nav:focus::before {
+  z-index: 0;
+}
+.menu nav:focus ul,
+.menu ul:hover {
+  display: block;
+}
