@@ -4,12 +4,14 @@
   outline: 0;
   box-sizing: content-box;
 }
+.ul {
+  width: 24%;
+}
 .menu li {
-  display: inline-block;
+  display: block;
   background: #c2f272;
   font-size: 1.4em;
   text-align: center;
-  width: 24%;
 }
 .menu li:hover {
   background: #f2d272;
@@ -22,19 +24,17 @@
   width: 100%;
 }
 
-@media screen and (max-width: 920px) {
-.menu li {
-    width: 49.5%;
-  }
-}
-
 @media screen and (max-width: 680px) {
 .menu li {
     width: 100%;
+    display: none;
+ }
 }
-.menu ul {
-  display: none;
-}
+@media screen and (max-width: 680px) {
+.menu li {
+    width: 100%;
+    display: block;
+ }
 }
 .menu nav::before,
 .menu::after {
@@ -48,6 +48,7 @@
   height: 24px;
   width: 24px;
 }
+
 .menu nav::before,
 .menu::after {
   background-color: #fc0;
