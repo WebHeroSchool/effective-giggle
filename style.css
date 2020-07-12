@@ -30,12 +30,6 @@
     display: none;
  }
 }
-@media screen and (max-width: 680px) {
-.menu li {
-    width: 100%;
-    display: block;
- }
-}
 .menu nav::before,
 .menu::after {
   content: '';
