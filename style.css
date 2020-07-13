@@ -22,11 +22,10 @@
   width: 100%;
 }
 
-@media screen and (max-width: 680px) {
+@media  (max-width: 680px) {
 .menu li {
     width: 100%;
-    display: block;
- }
+    display: none;
 }
 .menu nav::before,
 .menu::after {
@@ -34,7 +33,6 @@
   position: absolute;
   top: 0;
   right: 0;
-  display: block;
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAwCAMAAAA8VkqRAAAABlBMVEUAAAAAAAClZ7nPAAAAAXRSTlMAQObYZgAAAE5JREFUeAFjwAkYcQC6SFAKBt4fo/6AaMMUQTUQIYJpFaqrMIICzkATR2Hi5uDUjmkh7tDAHUq4Qw8ujl+CsFEEHDVowg1n1OJKDLiTDwBLrgJ9vkuXOwAAAABJRU5ErkJggg==);
   cursor: pointer;
   height: 24px;
@@ -55,8 +53,4 @@
 }
 .menu nav:focus::before {
   z-index: 0;
-}
-.menu nav:focus ul,
-.menu ul:hover {
-  display: block;
 }
